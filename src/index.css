@@ -1,0 +1,213 @@
+/* ==========================================================================
+   VARIABLES Y TEMAS RGB NEÓN
+   ========================================================================== */
+:root {
+  --rgb-cyan: rgb(0, 240, 255);
+  --rgb-pink: rgb(255, 0, 127);
+  --rgb-purple: rgb(138, 43, 226);
+
+  --bg-main: rgb(13, 17, 23);
+  --bg-darker: rgb(9, 12, 16);
+  --bg-card: rgb(22, 27, 34);
+  
+  --text-main: rgb(240, 246, 252);
+  --text-subtle: rgb(180, 190, 205); /* Gris claro con alto contraste */
+}
+
+/* Base global y corrección de contraste */
+body {
+  background-color: var(--bg-main) !important;
+  color: var(--text-main) !important;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background-color: var(--bg-main);
+  min-height: 100vh;
+}
+
+/* FORZAR LECTURA CLARA EN CLASES DE BOOTSTRAP */
+.text-muted, 
+.text-secondary, 
+.card-text, 
+p, 
+span:not(.rgb-text) {
+  color: var(--text-subtle) !important;
+}
+
+h1, h2, h3, h4, h5, h6, .card-title, .form-label {
+  color: #ffffff !important;
+}
+
+.bg-darker {
+  background-color: var(--bg-darker) !important;
+}
+
+/* ==========================================================================
+   EFECTOS Y GRADIENTES RGB
+   ========================================================================== */
+.rgb-text {
+  background: linear-gradient(135deg, var(--rgb-cyan), var(--rgb-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+  display: inline-block;
+}
+
+.rgb-icon {
+  color: var(--rgb-cyan) !important;
+  transition: all 0.3s ease;
+}
+
+/* Botones RGB Neón */
+.btn-rgb {
+  background: linear-gradient(135deg, var(--rgb-purple), var(--rgb-pink)) !important;
+  color: #ffffff !important;
+  border: none !important;
+  font-weight: 600;
+  box-shadow: 0 0 12px rgba(255, 0, 127, 0.35);
+  transition: all 0.3s ease;
+}
+
+.btn-rgb:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 22px rgba(0, 240, 255, 0.6);
+  color: #ffffff !important;
+}
+
+.btn-outline-rgb {
+  background: transparent !important;
+  color: var(--rgb-cyan) !important;
+  border: 1px solid var(--rgb-cyan) !important;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-rgb:hover {
+  background: var(--rgb-cyan) !important;
+  color: var(--bg-main) !important;
+  box-shadow: 0 0 16px rgba(0, 240, 255, 0.5);
+}
+
+.badge-rgb {
+  background: rgba(0, 240, 255, 0.12) !important;
+  border: 1px solid var(--rgb-cyan);
+  color: var(--rgb-cyan) !important;
+}
+
+/* ==========================================================================
+   NAVBAR
+   ========================================================================== */
+.custom-navbar {
+  background-color: rgba(13, 17, 23, 0.94) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.custom-navbar .nav-link {
+  color: var(--text-main) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: var(--rgb-cyan) !important;
+}
+
+/* ==========================================================================
+   HERO / SECCIÓN PRINCIPAL
+   ========================================================================== */
+.hero-section {
+  min-height: 85vh;
+  background: radial-gradient(circle at 10% 20%, rgba(138, 43, 226, 0.18) 0%, transparent 45%);
+}
+
+.avatar-wrapper {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, var(--rgb-cyan), var(--rgb-pink));
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.35);
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid var(--bg-main);
+}
+
+/* ==========================================================================
+   TARJETAS
+   ========================================================================== */
+.skill-card, 
+.project-card, 
+.testimonial-card, 
+.form-card {
+  background-color: var(--bg-card) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 12px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover, 
+.project-card:hover, 
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--rgb-cyan) !important;
+  box-shadow: 0 8px 24px rgba(0, 240, 255, 0.2);
+}
+
+.skill-card:hover .rgb-icon {
+  transform: scale(1.15);
+  color: var(--rgb-pink) !important;
+}
+
+/* ==========================================================================
+   FORMULARIO
+   ========================================================================== */
+.custom-input {
+  background-color: rgba(13, 17, 23, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+}
+
+.custom-input::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.custom-input:focus {
+  background-color: rgba(13, 17, 23, 1) !important;
+  color: #ffffff !important;
+  border-color: var(--rgb-cyan) !important;
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.35) !important;
+}
+
+/* ==========================================================================
+   BOTÓN FLOTANTE SCROLL TO TOP
+   ========================================================================== */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--rgb-cyan), var(--rgb-purple)) !important;
+  color: #ffffff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  font-size: 1.2rem;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-top-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(255, 0, 127, 0.7);
+}
