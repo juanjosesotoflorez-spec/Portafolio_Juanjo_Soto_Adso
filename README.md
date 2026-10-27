@@ -8,7 +8,7 @@ Proyecto desarrollado como parte del programa **Análisis y Desarrollo de Softwa
 ## 🔗 Enlaces y Visualización del Proyecto
 
 * **Repositorio en GitHub:** [https://github.com/juanjosesotoflorez-spec/Portafolio_Juanjo_Soto_Adso](https://github.com/juanjosesotoflorez-spec/Portafolio_Juanjo_Soto_Adso)
-* **Despliegue / Demo en Vivo:** `[https://juanjosesotoflorez-spec.github.io/Portafolio_Juanjo_Soto_Adso/]`
+* **Despliegue / Demo en Vivo:** https://juanjosesotoflorez-spec.github.io/Portafolio_Juanjo_Soto_Adso/
 
 ---
 
