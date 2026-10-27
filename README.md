@@ -1,16 +1,55 @@
-# React + Vite
+# 🚀 Portafolio Web Interactivo con React.js y Bootstrap
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Proyecto desarrollado como parte del programa **Análisis y Desarrollo de Software (ADSO)** del SENA. Consiste en la creación de una página web de portafolio personal moderna, modular y completamente responsiva, construida mediante la descomposición de componentes reutilizables en **React.js** y estilizada con **Bootstrap**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Enlaces y Visualización del Proyecto
 
-## React Compiler
+* **Repositorio en GitHub:** [https://github.com/juanjosesotoflorez-spec/Portafolio_Juanjo_Soto_Adso](https://github.com/juanjosesotoflorez-spec/Portafolio_Juanjo_Soto_Adso)
+* **Despliegue / Demo en Vivo:** `[COLOCA_AQUÍ_EL_LINK_DE_GITHUB_PAGES_O_VERCEL_SI_DESPLEGASTE]`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 📋 Características y Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+* **Diseño Responsivo:** Adaptado a dispositivos móviles, tablets y escritorio mediante el sistema de Grid (`Row`, `Col`) y componentes de Bootstrap.
+* **Arquitectura Modular en React:** Dividida en componentes funcionales independientes para facilitar el mantenimiento y reutilización de código.
+* **Secciones Desarrolladas:**
+  * **Header / Navegación:** Barra superior interactiva estilizada con clase `Navbar`.
+  * **Acerca de Mí (About Me):** Introducción personal con soporte para avatar y descripción profesional.
+  * **Habilidades (SkillsSection & SkillCard):** Cuadrícula de tarjetas con experiencia en tecnologías web.
+  * **Proyectos (ProjectsSection):** Exhibición de proyectos desarrollados.
+  * **Recomendaciones (RecommendationsSection):** Muestra de testimonios recibidos.
+  * **Formulario de Recomendaciones / Contacto (ContactForm):** Permite al usuario enviar nuevas recomendaciones.
+  * **Persistencia de Datos (LocalStorage):** Las recomendaciones enviadas se guardan en el almacenamiento local del navegador para no borrarse al refrescar la página.
+  * **Botón ScrollToTop:** Botón flotante para regresar rápidamente a la parte superior de la página.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+* **React.js** (Componentes funcionales, `useState`, `useEffect`, Props)
+* **Bootstrap 5** & **React-Bootstrap** (Estilizado, Grid system, Cards, Forms)
+* **Bootstrap Icons**
+* **JavaScript (ES6+)**
+* **HTML5 / CSS3**
+* **Vite / Node.js & npm**
+
+---
+
+## 📁 Estructura del Proyecto
+
+```text
+src/
+├── componentes/
+│   ├── AboutMe.jsx
+│   ├── ContactForm.jsx
+│   ├── Header.jsx
+│   ├── ProjectsSection.jsx
+│   ├── RecommendationsSection.jsx
+│   ├── ScrollToTop.jsx
+│   └── SkillsSection.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
