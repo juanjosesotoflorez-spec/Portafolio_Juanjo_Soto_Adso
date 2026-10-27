@@ -1,7 +1,7 @@
 
 # 🚀 Portafolio Web Interactivo con React.js y Bootstrap
 
-Proyecto desarrollado como parte del programa **Análisis y Desarrollo de Software (ADSO)** del SENA[cite: 4]. Consiste en la creación de una página web de portafolio personal moderna, modular y completamente responsiva, construida mediante la descomposición de componentes reutilizables en **React.js** y estilizada con **Bootstrap**[cite: 4].
+Proyecto desarrollado como parte del programa **Análisis y Desarrollo de Software (ADSO)** del SENA Pedregal. Consiste en la creación de una página web de portafolio personal moderna, modular y completamente responsiva, construida mediante la descomposición de componentes reutilizables en **React.js** y estilizada con **Bootstrap**[cite: 4].
 
 ---
 
