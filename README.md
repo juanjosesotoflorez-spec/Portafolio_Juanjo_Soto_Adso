@@ -1,3 +1,4 @@
+
 # 🚀 Portafolio Web Interactivo con React.js y Bootstrap
 
 Proyecto desarrollado como parte del programa **Análisis y Desarrollo de Software (ADSO)** del SENA Pedregal. Consiste en la creación de una página web de portafolio personal moderna, modular y completamente responsiva, construida mediante la descomposición de componentes reutilizables en **React.js** y estilizada con **Bootstrap**
@@ -53,3 +54,50 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── index.css
+
+```
+
+---
+
+## 💻 Instalación y Configuración Local
+
+Si deseas clonar y ejecutar este proyecto en tu entorno local:
+
+1. **Clonar el repositorio:**
+
+```bash
+git clone [https://github.com/juanjosesotoflorez-spec/Portafolio_Juanjo_Soto_Adso.git](https://github.com/juanjosesotoflorez-spec/Portafolio_Juanjo_Soto_Adso.git)
+
+```
+
+2. **Navegar al directorio del proyecto:**
+
+```bash
+cd Portafolio_Juanjo_Soto_Adso
+
+```
+
+3. **Instalar las dependencias:**
+
+```bash
+npm install
+
+```
+
+4. **Iniciar el servidor de desarrollo:**
+
+```bash
+npm run dev
+
+```
+
+5. Abrir la dirección local (por ejemplo, `http://localhost:5173`) en tu navegador.
+
+---
+
+## 👤 Autor
+
+* **Juan José Soto Flórez**
+* Programa: Técnico / Tecnólogo en Análisis y Desarrollo de Software (ADSO) — SENA
+* Ubicación: Medellín, Colombia 🇨🇴
+
